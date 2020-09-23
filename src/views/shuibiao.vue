@@ -48,7 +48,7 @@
     import rtView from '@/components/rtView.vue'
     import cbView from '@/components/cbView.vue'
     import Comp from '@/components/Comp.vue'
-    import PointUnView from '@/components/PointUn.vue'
+    import PointUnView from '@/components/PointUnView.vue'
     import {
         request
     } from '../api/request.js'
