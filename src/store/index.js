@@ -387,7 +387,6 @@ export default new Vuex.Store({
                 offline: 0 //掉线
             },
 
-            weterMapData: [], //水表数据
             //建筑界面柱状图
             weterLbViewData: {
                 lineData: [], //条形长度数据
