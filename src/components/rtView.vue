@@ -1,3 +1,4 @@
+<!--学校基本信息-->
 <template>
     <div id="rtView">
         <el-row style="text-align: center;">

@@ -1,3 +1,4 @@
+<!--水表运行情况-->
 <template>
     <div id="lbView">
         <el-row style="text-align: center;">

@@ -1,3 +1,4 @@
+<!--全局组件学校基本信息和总体用水指标-->
 <template>
     <el-container id="app">
         <el-header style="height: 185px;">

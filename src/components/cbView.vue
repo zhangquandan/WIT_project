@@ -1,3 +1,4 @@
+<!--定额折线图-->
 <template>
     <div id="cbView" ref="cbView" style="width:96%;height:650px;margin-left: 2%;"></div>
 </template>

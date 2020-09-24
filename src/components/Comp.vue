@@ -1,3 +1,4 @@
+<!--漏损指数排行榜-->
 <template>
     <div>
         <el-row style="text-align: center;">
