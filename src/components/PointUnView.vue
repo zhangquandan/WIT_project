@@ -1,3 +1,4 @@
+<!--水表散点图-->
 <template>
     <div id="UNs">
         <div class="chat_content">
@@ -19,8 +20,8 @@
 </template>
 
 <script>
-    import data from '../static/mock/PointWC.json';
-    import data2 from '../static/mock/PointLF.json';
+    import data from '../static/mock/PointWC_bg.json';
+    import data2 from '../static/mock/PointLF_bg.json';
 
     export default {
         name: 'Un',
@@ -75,10 +76,11 @@
         },
         methods: {
             initCharts() {
+                //水表百度坐标
                 var dataf = this.$store.state.data.frameLf
                 var dataw = this.$store.state.data.frameWc
                 var arr = this.$store.state.data.skData
-
+                //数据格式转换
                 function convertdata(d) {
                     var res = [];
                     for (var i = 0; i < d.length; i++) {

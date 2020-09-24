@@ -195,7 +195,6 @@
                 var frameLf = that.$store.state.data.frameLf
                 var frameWc = that.$store.state.data.frameWc
 
-                //获取水表的数量
                 request("leakagelndex", "meterInfo", {
                     name: '',
                     value: ''
@@ -344,6 +343,11 @@
                         })
                     }
 
+
+
+
+
+
                     //流芳
                     for (let i = 180; i <= 223; i++) {
                         request("leakagelndex", "waterMeter", {
@@ -389,6 +393,102 @@
                             }
                         })
                     }
+
+                    //武昌
+                    for (let i = 230; i <= 237; i++) {
+                        request("leakagelndex", "waterMeter", {
+                            watermeterid: i,
+                            time: time
+                        }, function (res) {
+                            var data = res.data.data
+                            if (data) {
+                                for (let j = 0; j < frameWc.length; j++) {
+                                    if (frameWc[j][0] == data.name) {
+                                        frameWc[j][3] = data
+                                        that.$store.commit("addWaterData", {
+                                            data: frameWc[j],
+                                            success: function () {
+                                                //console.log(that.$store.state.data.weterMapData.length)
+                                                if (that.$store.state.data.weterMapData.length == total - 1) {
+                                                    that.meterSort()
+                                                }
+                                            }
+                                        })
+
+                                        that.$store.commit("setMaterMapData", {
+                                            type: "wuchang",
+                                            index: j,
+                                            data: data,
+                                            success: function () {
+                                                that.$refs.point.setData()
+                                            }
+                                        })
+                                        break
+                                    }
+                                }
+                            } else {
+                                that.$store.commit("addWaterData", {
+                                    data: '',
+                                    success: function () {
+                                        //console.log(that.$store.state.data.weterMapData.length)
+                                        if (that.$store.state.data.weterMapData.length == total - 1) {
+                                            that.meterSort()
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                    }
+
+
+                    //流芳
+                    for (let i = 238; i <= 245; i++) {
+                        request("leakagelndex", "waterMeter", {
+                            watermeterid: i,
+                            time: time
+                        }, function (res) {
+                            var data = res.data.data
+                            if (data) {
+                                for (let j = 0; j < frameLf.length; j++) {
+                                    if (frameLf[j][0] == data.name) {
+                                        frameLf[j][3] = data
+                                        that.$store.commit("addWaterData", {
+                                            data: frameLf[j],
+                                            success: function () {
+                                                //console.log(that.$store.state.data.weterMapData.length)
+                                                if (that.$store.state.data.weterMapData.length == total - 1) {
+                                                    that.meterSort()
+                                                }
+                                            }
+                                        })
+
+                                        that.$store.commit("setMaterMapData", {
+                                            type: "liufang",
+                                            index: j,
+                                            data: data,
+                                            success: function () {
+                                                that.$refs.point.setData()
+                                            }
+                                        })
+                                        break
+                                    }
+                                }
+                            } else {
+                                that.$store.commit("addWaterData", {
+                                    data: '',
+                                    success: function () {
+                                        //console.log(that.$store.state.data.weterMapData.length)
+                                        if (that.$store.state.data.weterMapData.length == total - 1) {
+                                            that.meterSort()
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                    }
+
+
+
                 })
             },
 

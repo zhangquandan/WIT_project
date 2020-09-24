@@ -1,4 +1,6 @@
-// 在此绘制散点图
+// 数据存储和初始化
+//使用Vuex状态管理工具传递数据
+//通过that.$store.commit提交数据
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -418,6 +420,7 @@ export default new Vuex.Store({
 
         },
 
+        //将综合漏损指数插入到水表坐标中
         setMaterMapData: function (state, args) {
             if (args.type == "wuchang") {
                 try {
