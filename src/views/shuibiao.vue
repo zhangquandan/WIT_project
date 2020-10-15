@@ -215,10 +215,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameWc[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -237,10 +234,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -262,10 +256,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameLf[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -285,10 +276,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -311,10 +299,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameWc[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -333,10 +318,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -362,10 +344,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameLf[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -384,10 +363,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -408,10 +384,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameWc[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -430,10 +403,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -455,10 +425,7 @@
                                         that.$store.commit("addWaterData", {
                                             data: frameLf[j],
                                             success: function () {
-                                                //console.log(that.$store.state.data.weterMapData.length)
-                                                if (that.$store.state.data.weterMapData.length == total - 1) {
-                                                    that.meterSort()
-                                                }
+                                                that.meterSort()
                                             }
                                         })
 
@@ -477,10 +444,7 @@
                                 that.$store.commit("addWaterData", {
                                     data: '',
                                     success: function () {
-                                        //console.log(that.$store.state.data.weterMapData.length)
-                                        if (that.$store.state.data.weterMapData.length == total - 1) {
-                                            that.meterSort()
-                                        }
+                                        that.meterSort()
                                     }
                                 })
                             }
@@ -560,8 +524,6 @@
                     success: function () {
                         that.$refs.comp.setData()
                         that.$store.commit('setViewState', 'meterlbView')
-                        //that.$store.state.init.meterlbView = false
-                        console.log("水表柱状图初始化完成")
                     }
                 })
 

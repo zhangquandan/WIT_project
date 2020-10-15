@@ -134,9 +134,9 @@
                 this.meterInfo()
             }
 
-            if (this.$store.state.init.meterlbView) {
-                this.getPointData()
-            }
+            // if (this.$store.state.init.meterlbView) {
+            //     this.getPointData()
+            // }
 
             if (this.$store.state.init.zhWc || this.$store.state.init.zhWc) {
                 this.getMapData()
