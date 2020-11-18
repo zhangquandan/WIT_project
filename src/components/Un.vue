@@ -245,6 +245,7 @@
                                         '当日水量：' + params.data.value[5] + '</br>' +
                                         '日量隔周增量：' + params.data.value[3] + '</br>' +
                                         '日量隔周增幅：' + params.data.value[2] + '</br>' +
+                                        '报警日最小流量：' + params.data.value[4] + '</br>' +
                                         '最小流量隔周增量：' + params.data.value[0] + '</br>' +
                                         '最小流量隔周增幅：' + params.data.value[1] + '</br>' +
                                         '综合漏损指数：' + params.data.value[6] + '</br>' +
