@@ -5,8 +5,8 @@ let login = true
 var api = API
 
 axios.defaults.withCredentials = true;
-// axios.defaults.baseURL = API.baseUrl
-axios.defaults.baseURL = "/api"
+axios.defaults.baseURL = API.baseUrl
+// axios.defaults.baseURL = "/api"
 axios.defaults.timeout = 15000
 axios.interceptors.response.use(function (response) {
     if (response.data.errCode == 10100 || !localStorage.getItem('token')) {
