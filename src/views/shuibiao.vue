@@ -527,7 +527,7 @@
                     }
                 })
 
-                //建筑相关漏损指数
+                //水表关键漏损指标
                 var LbViewData = []
                 for (let c = 0; c < 10; c++) {
                     LbViewData[c] = {

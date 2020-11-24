@@ -10,7 +10,7 @@
             </div>
             <div class="lb">
                 <lbView fontStyle="right" titleRight="15px" :space="15" right="10px" :val="$store.state.data.ViewData2"
-                        :labellength="7" :valLenght="7" :label="dmaLabel" :icon="icon[0]" title="建筑相关漏损指数"></lbView>
+                        :labellength="7" :valLenght="7" :label="dmaLabel" :icon="icon[0]" title="建筑关键漏损指标"></lbView>
             </div>
         </div>
         <div class="mid">
@@ -498,7 +498,7 @@
                     }
                 })
 
-                //建筑相关漏损指数
+                //建筑关键漏损指标
                 var LbViewData = []
                 for (let c = 0; c < 10; c++) {
                     LbViewData[c] = {
